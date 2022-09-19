@@ -3,7 +3,7 @@ import bannerImage from '../images/Pickup_Illustration.png'
 
 const Part1 = () => {
     return (
-        <div className='pl-8 pr-8 lg:px-10'>
+        <div className='pl-8 pr-8 lg:px-20'>
             <div className='mb-16 lg:mt-36'>
                 <div className='grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 '>
                     <div className='text-white' >
