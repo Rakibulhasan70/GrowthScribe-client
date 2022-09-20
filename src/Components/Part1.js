@@ -47,9 +47,9 @@ const Part1 = () => {
             <div className='mb-16 lg:mt-36'>
                 <div className='grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 '>
                     <div className='text-white' >
-                        <h2 className='font-bold mb-3 text-3xl lg:text-4xl lg:leading-10 text-gray-300 text-center lg:text-start'>Vehicle Maintenance</h2>
-                        <p className='font-bold mb-3 text-3xl lg:text-4xl lg:leading-10 text-gray-300 text-center lg:text-start'>From The Comfort of</p>
-                        <p className='font-bold mb-3 text-3xl lg:text-4xl lg:leading-10 text-gray-300 text-center lg:text-start'>Your Home</p>
+                        <h2 className='font-bold mb-3 text-3xl lg:text-4xl lg:leading-normal text-gray-300 text-center lg:text-start lg:w-3/4'>Vehicle Maintenance From The Comfort of Your Home</h2>
+                        {/* <p className='font-bold mb-3 text-3xl lg:text-4xl lg:leading-10 text-gray-300 text-center lg:text-start'>From The Comfort of</p> */}
+                        {/* <p className='font-bold mb-3 text-3xl lg:text-4xl lg:leading-10 text-gray-300 text-center lg:text-start'>Your Home</p> */}
                         <p className='text-sm my-10 lg:w-4/5 text-gray-500 text-center lg:text-start leading-loose lg:leading-7 '>Open Auto Soothes the hassle of maintaining your vehicle and helps
                             you deal with unexpected repairs worry-free </p>
 
