@@ -48,7 +48,6 @@ const Part1 = () => {
                 icon: 'error',
                 confirmButtonText: 'ok'
             })
-            reset()
         }
     };
     return (
