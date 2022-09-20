@@ -1,5 +1,5 @@
 .scroll-to-top {
-    background-color: #6e6f72;
+    /* background-color: #6e6f72; */
     right: 40px;
     bottom: 40px;
     position: fixed;
@@ -15,5 +15,6 @@
 .scroll-to-top svg {
     height: 20px !important;
     width: 40px !important;
-    /* fill: #f1f5ee; */
+    fill: #6e6f72;
+    font-weight: bolder !important;
 }
