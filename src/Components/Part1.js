@@ -14,33 +14,41 @@ const Part1 = () => {
         const review = {
             email: data?.email,
             Name: data?.name,
-
         }
-        fetch('https://growscribe-server.onrender.com/input', {
-            method: "POST",
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(review)
-        })
-            .then(res => res.json())
-            .then(data => {
-                if (data.insertedId) {
-                    Swal.fire({
-                        title: 'Successfully Submited!',
-                        icon: 'success',
-                        confirmButtonText: 'ok'
-                    })
-                    reset()
-                }
-                else {
-                    Swal.fire({
-                        title: 'Faild to Post!',
-                        icon: 'error',
-                        confirmButtonText: 'ok'
-                    })
-                }
+        if (review.email !== '' && review.name !== '') {
+            fetch('https://growscribe-server.onrender.com/input', {
+                method: "POST",
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(review)
             })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.insertedId) {
+                        Swal.fire({
+                            title: 'Successfully Submited!',
+                            icon: 'success',
+                            confirmButtonText: 'ok'
+                        })
+                        reset()
+                    }
+                    else {
+                        Swal.fire({
+                            title: 'Please fill up the require field',
+                            icon: 'error',
+                            confirmButtonText: 'ok'
+                        })
+                    }
+                })
+        }
+        else {
+            Swal.fire({
+                title: 'Please fill up the require field',
+                icon: 'error',
+                confirmButtonText: 'ok'
+            })
+        }
     };
     return (
         <div className='pl-8 pr-8 lg:px-20 pt-10 lg:pt-0'>
@@ -54,22 +62,22 @@ const Part1 = () => {
                             you deal with unexpected repairs worry-free </p>
 
                         <form onSubmit={handleSubmit(onSubmit)}>
-                            <input {...register("name")} type="text" placeholder="Enter Your Name" class="input w-full max-w-xs rounded-3xl border-gray-500 mb-5 p-6 bg-[#111720]" required autoComplete='off' />
+                            <input {...register("name")} type="text" placeholder="Enter Your Name" class="input w-full max-w-xs rounded-3xl border-gray-500 mb-5 p-6 bg-[#111720]" autoComplete='off' />
                             <br />
-                            <input {...register("email")} type="email" placeholder="Enter Your Email" class="input w-full max-w-xs rounded-3xl border-gray-500 mb-5 p-6 bg-[#111720]" required autoComplete='off' />
+                            <input {...register("email")} type="email" placeholder="Enter Your Email" class="input w-full max-w-xs rounded-3xl border-gray-500 mb-5 p-6 bg-[#111720]" autoComplete='off' />
                             <br />
-                            <input type="submit" value='Submit' class="input w-full max-w-xs rounded-3xl border-gray-500  text-lg bg-[#111720] hover:bg-[#a809cc] lg:mb-0 mb-16" />
+                            <input type="submit" value='Submit' class="input w-full max-w-xs rounded-3xl border-gray-500  text-lg bg-[#111720] hover:bg-[#a809cc] lg:mb-0 mb-16 hover:cursor-pointer" />
                         </form>
 
                     </div>
                     <div className='w-84 lg:w-full '>
                         <img className=' lg:w-full ' style={{ borderRadius: '10px' }} src={bannerImage} alt="" />
                         <div className='flex items-center lg:justify-end justify-center  text-center mt-10 lg:mt-10 mx-2  '>
-                            <BsFacebook className='text-white ' />
-                            <BsTwitter className='text-white lg:ml-5 ml-8' />
-                            <BsYoutube className='text-white lg:ml-5 ml-8' />
-                            <BsLinkedin className='text-white lg:ml-5 ml-8' />
-                            <BsInstagram className='text-white lg:ml-5 ml-8' />
+                            <BsFacebook className='text-white hover:cursor-pointer' />
+                            <BsTwitter className='text-white lg:ml-5 ml-8 hover:cursor-pointer' />
+                            <BsYoutube className='text-white lg:ml-5 ml-8 hover:cursor-pointer' />
+                            <BsLinkedin className='text-white lg:ml-5 ml-8 hover:cursor-pointer' />
+                            <BsInstagram className='text-white lg:ml-5 ml-8 hover:cursor-pointer' />
                         </div>
                     </div>
 

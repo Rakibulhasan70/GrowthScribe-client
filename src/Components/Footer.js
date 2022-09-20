@@ -27,11 +27,11 @@ const Footer = () => {
 
                 </div>
                 <div className='flex justify-between items-center text-center mt-10 lg:mt-0 mx-2 lg:mr-6 '>
-                    <BsFacebook className='text-white lg:mr-8' />
-                    <BsTwitter className='text-white lg:mr-8' />
-                    <BsYoutube className='text-white lg:mr-8' />
-                    <BsLinkedin className='text-white lg:mr-8' />
-                    <BsInstagram className='text-white lg:mr-8' />
+                    <BsFacebook className='text-white lg:mr-8 hover:cursor-pointer' />
+                    <BsTwitter className='text-white lg:mr-8 hover:cursor-pointer' />
+                    <BsYoutube className='text-white lg:mr-8 hover:cursor-pointer' />
+                    <BsLinkedin className='text-white lg:mr-8 hover:cursor-pointer' />
+                    <BsInstagram className='text-white lg:mr-8 hover:cursor-pointer' />
                 </div>
 
             </div>
