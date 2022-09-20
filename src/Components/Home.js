@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <div >
             <div style={{ backgroundColor: '#111720' }}>
-                <ScrollToTop smooth />
+                <ScrollToTop smooth color="white" />
                 <Navbar></Navbar>
                 <Part1></Part1>
                 <Part2></Part2>
