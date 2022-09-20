@@ -6,7 +6,7 @@ const Part2 = () => {
     return (
         <div style={{ backgroundColor: '#10141b' }} className='pl-8 pr-8 lg:px-20 '>
             <div className='  lg:pt-24 pb-24'>
-                <div className='flex lg:flex-row flex-col-reverse '>
+                <div className='flex lg:flex-row flex-col-reverse'>
                     <div >
                         <img className=' lg:w-9/12 ' style={{ borderRadius: '10px' }} src={bodyImage} alt="" />
                     </div>

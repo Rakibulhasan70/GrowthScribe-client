@@ -3,7 +3,7 @@ import { MdPhone } from 'react-icons/md'
 import { AiOutlineMail } from 'react-icons/ai'
 const Navbar = () => {
     return (
-        <div style={{ backgroundColor: '#111720' }} className="navbar bg-base-100 py-2 pl-8 lg:px-20 lg:pt-12">
+        <div style={{ backgroundColor: '#111720' }} className="navbar bg-base-100 py-2 pl-8 lg:px-20 lg:pt-8">
             <div className="navbar-start">
                 <div className="dropdown">
                 </div>

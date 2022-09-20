@@ -9,7 +9,7 @@ import { BsInstagram } from 'react-icons/bs'
 
 const Footer = () => {
     return (
-        <div style={{ backgroundColor: '#10141b' }} className='pl-4 pr-4 lg:px-20 pb-20 pt-10'>
+        <div style={{ backgroundColor: '#10141b' }} className='pl-4 pr-4 lg:px-20 pb-10 pt-10'>
             <div className='lg:flex justify-between text-center'>
                 <h2 className=' normal-case text-2xl font-semibold text-white leading-9'>OPENAUTO</h2>
                 <div className='flex justify-between mt-10 lg:mt-0'>
