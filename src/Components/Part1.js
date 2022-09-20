@@ -15,7 +15,7 @@ const Part1 = () => {
             email: data?.email,
             Name: data?.name,
         }
-        if (review.email !== '' && review.name !== '') {
+        if (review.email !== '' && review.Name !== '') {
             fetch('https://growscribe-server.onrender.com/input', {
                 method: "POST",
                 headers: {
@@ -48,6 +48,7 @@ const Part1 = () => {
                 icon: 'error',
                 confirmButtonText: 'ok'
             })
+            reset()
         }
     };
     return (
