@@ -14,7 +14,6 @@ const Part1 = () => {
         const review = {
             email: data?.email,
             Name: data?.name,
-            number: data?.number
 
         }
         fetch('https://growscribe-server.onrender.com/input', {
