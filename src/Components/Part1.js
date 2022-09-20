@@ -47,16 +47,16 @@ const Part1 = () => {
             <div className='mb-16 lg:mt-36'>
                 <div className='grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 '>
                     <div className='text-white' >
-                        <h2 className='font-bold mb-3 text-3xl lg:text-4xl lg:leading-10 text-gray-300'>Vehicle Maintenance</h2>
-                        <p className='font-bold mb-3 text-3xl lg:text-4xl lg:leading-10 text-gray-300'>From The Comfort of</p>
+                        <h2 className='font-bold mb-3 text-3xl lg:text-4xl lg:leading-10 text-gray-300 text-center lg:text-start'>Vehicle Maintenance</h2>
+                        <p className='font-bold mb-3 text-3xl lg:text-4xl lg:leading-10 text-gray-300 text-center lg:text-start'>From The Comfort of</p>
                         <p className='font-bold mb-3 text-3xl lg:text-4xl lg:leading-10 text-gray-300 text-center lg:text-start'>Your Home</p>
                         <p className='text-sm my-10 lg:w-4/5 text-gray-500 text-center lg:text-start leading-loose lg:leading-7 '>Open Auto Soothes the hassle of maintaining your vehicle and helps
                             you deal with unexpected repairs worry-free </p>
 
                         <form onSubmit={handleSubmit(onSubmit)}>
-                            <input {...register("name")} type="text" placeholder="Enter Your Name" class="input w-full max-w-xs rounded-3xl border-gray-500 mb-5 p-6 bg-[#111720]" required />
+                            <input {...register("name")} type="text" placeholder="Enter Your Name" class="input w-full max-w-xs rounded-3xl border-gray-500 mb-5 p-6 bg-[#111720]" required autoComplete='off' />
                             <br />
-                            <input {...register("email")} type="email" placeholder="Enter Your Email" class="input w-full max-w-xs rounded-3xl border-gray-500 mb-5 p-6 bg-[#111720]" required />
+                            <input {...register("email")} type="email" placeholder="Enter Your Email" class="input w-full max-w-xs rounded-3xl border-gray-500 mb-5 p-6 bg-[#111720]" required autoComplete='off' />
                             <br />
                             <input type="submit" value='Submit' class="input w-full max-w-xs rounded-3xl border-gray-500  text-lg bg-[#111720] hover:bg-[#a809cc] lg:mb-0 mb-16" />
                         </form>
