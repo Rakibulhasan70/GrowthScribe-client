@@ -26,7 +26,7 @@ const Footer = () => {
                     <h2 className='flex items-center text-sm lg:mr-16 lg:text-md text-gray-400'>Cookie Policy</h2>
 
                 </div>
-                <div className='flex justify-between items-center text-center mt-10 mx-2 lg:mr-6 '>
+                <div className='flex justify-between items-center text-center mt-10 lg:mt-0 mx-2 lg:mr-6 '>
                     <BsFacebook className='text-white lg:mr-8' />
                     <BsTwitter className='text-white lg:mr-8' />
                     <BsYoutube className='text-white lg:mr-8' />
