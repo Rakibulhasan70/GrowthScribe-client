@@ -1,6 +1,20 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+OPENAUTO Project
+
+## Got to my project link and enjoy it.
+This is my project Live site link [https://growthscribe-89a0a.web.app/](https://growthscribe-89a0a.web.app/)to view in your browser
+
+### How to use this project
+- Enter the link and see the full website
+- In banner section we see the user information form 
+- Here user write thier name ,email and submit the form details
+- After submit we see the confirmation note 
+
+### Warning
+- After submition if we can not see the confirmation note , its not a bug
+it's just taking time from backend
+- Then please hard reload the page and try again. It's will working.
 
 ## Available Scripts
 
