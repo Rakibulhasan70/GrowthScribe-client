@@ -29,15 +29,17 @@ const Part1 = () => {
                         Swal.fire({
                             title: 'Successfully Submited!',
                             icon: 'success',
-                            confirmButtonText: 'ok'
+                            confirmButtonText: 'ok',
+
                         })
                         reset()
                     }
                     else {
                         Swal.fire({
-                            title: 'Please fill up the require field',
+                            title: 'Please fill the both require field',
                             icon: 'error',
-                            confirmButtonText: 'ok'
+                            confirmButtonText: 'ok',
+
                         })
                     }
                 })
